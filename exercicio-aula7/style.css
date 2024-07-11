@@ -1,0 +1,15 @@
+.classe1{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    border: 5px solid black;
+}
+.classe2{
+    background-color: purple;
+    color: blue;
+}
+.classe3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
