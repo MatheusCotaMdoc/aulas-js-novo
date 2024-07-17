@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de estacionamento</title>
+    <link rel="stylesheet" href="_css/home.css">
+    <link rel="stylesheet" href="_css/teste-menu.css">
+    <script src="_js/script.js"></script>
+</head>
+<body onload="carregarLista()">
+
+        <div class="main-login">
+            
+            <div class="left-login">
+
+                <img src="imagens-parking-spot/parking-animate.svg" class="left-login-image" alt="parking-animate">
+
+                
+                <div class="container">
+                    <nav class="menu">
+                        <input type="checkbox" name="menuCircular" id="menuCircular" class="menuCircular">
+                        <label for="menuCircular" class="menu-btn">
+                            <span class="linha linha-1"></span>
+                            <span class="linha linha-2"></span>
+                            <span class="linha linha-3"></span>
+                        </label>
+                        <a href="#" class="menu-a ai-1">
+                            <i class="fa fa-home">G</i>
+                        </a>
+                        <a href="#" class="menu-a ai-2">
+                            <i class="fa fa-buscar"><img src="imagens-parking-spot/buscar.png" alt="" class="img-menu"></i>
+                        </a>
+                        <a href="formulario.html" class="menu-a ai-3">
+                            <i class="fa fa-adicionar"><img src="imagens-parking-spot/adicionar.png" alt="" class="img-menu"></i>
+                        </a>
+                        <a href="#" class="menu-a ai-4">
+                            <i class="fa fa-js-square">JS</i>
+                        </a>
+                        <a href="index.html" class="menu-a ai-5">
+                            <i class="fa fa-sair"><img src="imagens-parking-spot/sair.png" alt="" class="img-menu"></i>
+                        </a>
+                       
+            
+            
+            
+                    </nav>
+                </div>
+                
+            </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <div class="text-field">
+
+                        <div id="busca-container" class="text-field-busca">
+                            <input type="text" name="buscar" id="buscar" placeholder="Informe o nome ou o numero da vaga">
+                            
+                            <button id="btn-buscar" class="btn-buscar" onclick="buscarVaga()">
+                                Buscar
+                            </button>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Numero da vaga</th>
+                                    <th>Placa do carro</th>
+                                    <th>Nome do responsavel</th>
+                                    <th>Data de registro</th>
+                                    <th>Açoes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="list">
+                                <tr>
+                                    <td colspan="4">Não existem registros</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="formulario.html">
+                            <buttom class="btn-formulario-novo">Cadastrar Morador</buttom>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+</body>
+</html>

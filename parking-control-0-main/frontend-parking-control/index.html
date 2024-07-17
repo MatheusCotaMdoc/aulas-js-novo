@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="_css/style.css">
+    
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+
+            <h1>Faça login <br> E entre para o nosso time</h1>
+            <img src="imagens-parking-spot/parking-animate.svg" class="left-login-image" alt="parking-animate">
+        
+        </div>
+
+        <div class="right-login">
+
+            <div class="card-login">
+
+                <h1>LOGIN</h1>
+
+                <div class="text-field">
+                    <label for="usuario"> Usuario</label>
+                    <input type="text" name="usuario" placeholder="usuário" id="login">
+                </div>
+
+                <div class="text-field">
+                    <label for="senha"> Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" id="senha">
+                </div>
+
+                <input class="btn-login" type="submit" onclick="logar()">
+
+                <script>
+
+                    function logar(){
+                        var login = document.getElementById('login').value 
+                        var senha = document.getElementById('senha').value 
+            
+                        if (login == "admin" && senha == "1234") {
+                            location.href = "home.html"
+                        } else{
+                            alert ('Usuario ou senha incorretos')
+                        }
+                    }
+            
+                </script>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cursoJS-basico-master/aula10/IMC/style.css">
+    <title>Cálculo de IMC</title>
+</head>
+<body>
+    <div class="content">
+        <div class="imagemSelect" onchange="selectGenero()">
+            <img  class="image" id="girl" src="/cursoJS-basico-master/aula10/IMC/imagens/girl.png" alt="Feminino">
+            <select name="genero" id="genero"  >
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+            </select>
+        </div>
+        <div class="informations">
+            <h1>Preencha suas informações</h1>
+            <div>
+                Nome <span>*</span>
+                <input type="text" name="name" id="name" required placeholder="Nome">
+            </div>
+            <div class="inform">
+                Altura <span>*</span>
+                <input type="number" name="altura" id="altura" required placeholder="0,00">
+            </div>
+            <div class="inform">
+                Peso <span>*</span>
+                <input type="number" name="peso" id="peso" required placeholder="00">
+            </div>
+            <button>Calcular IMC</button>
+        </div>
+        <div class="result">
+            <h1>Seu resultado é :</h1>
+            <ul class="list">
+                <li id="nome"></li>
+                <li id="resultado"></li>
+                <li id="estado"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/cursoJS-basico-master/aula10/IMC/script.js"></script>
+</body>
+</html>

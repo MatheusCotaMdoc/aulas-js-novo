@@ -1,0 +1,17 @@
+body {
+    display: block;
+    padding: 50%;
+    padding-top: 10%;
+    background-color: white;
+}
+
+#btn{
+    display: flex;
+    font-size: 20px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 10%;
+    border: blueviolet;
+    
+}
+
